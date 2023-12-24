@@ -75,7 +75,7 @@ export function FormularioAbogado() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onsubmit)}>
+      <form onSubmit={handleSubmit(onsubmit)} className="mx-2 mt-10">
         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">
           Nombre del abogado
         </label>

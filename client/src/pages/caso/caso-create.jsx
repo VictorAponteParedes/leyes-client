@@ -71,7 +71,7 @@ export function FormularioCaso() {
 
   return (
     <>
-      <form onSubmit={onsubmit}>
+      <form onSubmit={onsubmit} className="mx-2 mt-10">
         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">
           Nombre del caso
         </label>
