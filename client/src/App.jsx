@@ -5,23 +5,29 @@ import { FormularioAbogado } from "./pages/abogados/abogado-create";
 import { ListaCasos } from "./pages/caso/caso";
 import { HomePage } from "./pages/home/home";
 import { HeaderGlobal } from "./components/header-global";
+import { DetalleAbogado } from "./components/detalles/abogado/abogado-detalle";
+
+import { LoginComponente } from "./components/login/login";
 
 import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
-      <BrowserRouter basename="/app">
+      <BrowserRouter>
         <div className="container mx-auto">
           <HeaderGlobal />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            {/* RUTA DEL LOGIN */}
+            <Route path="/login" element={<LoginComponente />} />
             {/* RUTA DE CASO */}
             <Route path="/casos" element={<ListaCasos />} />
             <Route path="/casos/:id" element={<FormularioCaso />} />
             <Route path="/casos/crear" element={<FormularioCaso />} />
             {/* RUTA DE ABOGADO */}
             <Route path="/abogados" element={<ListaAbogados />} />
+            <Route path="/abogados/detalle/:id" element={<DetalleAbogado />} />
             <Route path="/abogados/:id" element={<FormularioAbogado />} />
             <Route path="/abogados/crear" element={<FormularioAbogado />} />
           </Routes>
