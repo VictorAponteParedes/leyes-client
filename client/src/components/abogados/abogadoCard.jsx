@@ -4,11 +4,7 @@ export function AbogadoCard({ item }) {
   const navigate = useNavigate();
   return (
     <>
-      <div
-        className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105 dark:bg-gray-800 dark:border-gray-700 "
-        onClick={() => {
-          navigate(`/abogados/${item.id}`);
-        }}>
+      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105 dark:bg-gray-800 dark:border-gray-700  mx-1">
         <img
           className="rounded-t-lg"
           src={item.foto_perfil} // Ajusta la ruta de la imagen aquí
@@ -22,10 +18,12 @@ export function AbogadoCard({ item }) {
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {item.descripcion}
+            {item.especialidad}
           </p>
           <a
-            href="#" //detalle del abogado
+            onClick={() => {
+              navigate(`/abogados/detalle/${item.id}`);
+            }}
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Ver mas!
             <svg

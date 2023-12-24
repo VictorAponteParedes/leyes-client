@@ -16,7 +16,7 @@ export function ListaCaso() {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mx-1">
         {caso.map((item) => (
           <div
             key={item.id}

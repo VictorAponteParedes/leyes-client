@@ -5,7 +5,7 @@ export function Home() {
   return (
     <>
       <div className="flex flex-col items-center  sm:flex-row sm:justify-center sm:space-x-4">
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105 dark:bg-gray-800 dark:border-gray-700">
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105 dark:bg-gray-800 dark:border-gray-700 mt-10">
           <img
             className="rounded-t-lg"
             src={cardAbogado} // Ajusta la ruta de la imagen aquí
@@ -24,7 +24,7 @@ export function Home() {
               profesionales del derecho.
             </p>
             <a
-              href="#"
+              href="/login"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               Ver mas!
               <svg
@@ -39,7 +39,7 @@ export function Home() {
 
         {/* SEGUNDO CARD */}
 
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105 dark:bg-gray-800 dark:border-gray-700">
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105 dark:bg-gray-800 dark:border-gray-700 mt-1">
           <a href="#">
             <img className="rounded-t-lg" src={cardClient} alt="" />
           </a>
@@ -55,7 +55,7 @@ export function Home() {
               confianza.
             </p>
             <a
-              href="/app/casos/"
+              href="/login"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               Ver mas!
               <svg
